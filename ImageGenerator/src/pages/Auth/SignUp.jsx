@@ -40,7 +40,7 @@ const SignUp = () => {
       resp.json().then(parsedresp);
     };
 
-    fetch("http://localhost:3000/api/v1/verifyOtp", {
+    fetch("https://mern-imagegenerator.onrender.com/api/v1/verifyOtp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const SignUp = () => {
       resp.json().then(parsedresp);
     };
 
-    fetch("http://localhost:3000/api/v1/sendOTP", {
+    fetch("https://mern-imagegenerator.onrender.com/api/v1/sendOTP", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -109,7 +109,7 @@ const SignUp = () => {
     const response = (resp) => {
       resp.json().then(parsedresp);
     };
-    fetch("http://localhost:3000/api/v1/Signup", {
+    fetch("https://mern-imagegenerator.onrender.com/api/v1/Signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

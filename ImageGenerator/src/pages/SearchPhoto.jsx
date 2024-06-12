@@ -18,7 +18,7 @@ const SearchPhoto = () => {
     console.log(token);
     try {
       const query = searchInput.current.value;
-      const response = await axios.get(`http://localhost:3000/api/v1/getPhoto/${query}`, {
+      const response = await axios.get(`https://mern-imagegenerator.onrender.com/api/v1/getPhoto/${query}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         },

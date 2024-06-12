@@ -12,7 +12,7 @@ const history = () => {
     console.log(token);
     try {
       // const query = searchInput.current.value;
-      const response = await axios.get(`http://localhost:3000/api/v1/gethistory`, {
+      const response = await axios.get(`https://mern-imagegenerator.onrender.com/api/v1/gethistory`, {
         headers: {
           'Authorization': `Bearer ${token}`
         },
