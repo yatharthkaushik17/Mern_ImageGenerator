@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 const PhotoRoute = require("./routes/Photos");
 // app.use(cookieParser());
 // Enable CORS for all origins
-app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
+app.use(cors());
 app.use(express.json());
 db.connect();
 
