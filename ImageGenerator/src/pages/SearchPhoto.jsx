@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import axios from 'axios';
 import './SearchPhoto.css';
 import { useSelector } from 'react-redux';
@@ -10,7 +10,7 @@ const SearchPhoto = () => {
   const [errorMsg, setErrorMsg] = useState('');
   const searchInput = useRef(null);
   const { token } = useSelector((state) => state.auth);
-  useEffect
+
 
   const fetchPhotos = async (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const SearchPhoto = () => {
         headers: {
           'Authorization': `Bearer ${token}`
         },
-        withCredentials: true // If your backend requires credentials
+        // withCredentials: true // If your backend requires credentials
       });
       console.log(response);
       if (response.data && response.data.data.results) {
