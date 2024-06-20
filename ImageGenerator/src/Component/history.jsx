@@ -37,7 +37,7 @@ const history = () => {
   useEffect(()=>{
     console.log("effect")
     fetchPhotos();
-  })
+  },[])
 
   return (
     <div className='text-white'>
