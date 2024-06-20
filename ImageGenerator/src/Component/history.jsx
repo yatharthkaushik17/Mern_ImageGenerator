@@ -16,7 +16,7 @@ const history = () => {
         headers: {
           'Authorization': `Bearer ${token}`
         },
-        withCredentials: true // If your backend requires credentials
+        // withCredentials: true // If your backend requires credentials
       });
       console.log(response);
       // if (response.data && response.data.data.results) {
